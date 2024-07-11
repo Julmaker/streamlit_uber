@@ -1,4 +1,4 @@
-numpy @ file:///croot/numpy_and_numpy_base_1682520569166/work
+numpy==1.24.3
 pandas==2.1.1
 pip==24.1.2
 streamlit==1.24.0
