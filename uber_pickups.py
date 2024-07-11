@@ -35,7 +35,7 @@ hist_values = np.histogram(
 
 st.bar_chart(hist_values)
 
-hour_to_filter = st.slider('hora', 0, 23, 17)  # min: 0h, max: 23h, default: 17h
+hour_to_filter = st.slider('Filtro x hora', 0, 23, 17)  # min: 0h, max: 23h, default: 17h
 filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 st.subheader(f'Map de todos los abordajes a las {hour_to_filter}:00')
 st.map(filtered_data)
